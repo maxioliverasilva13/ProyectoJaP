@@ -1,0 +1,93 @@
+body{
+    background: url("../img/fondologin.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    width:500px;
+    background: rgba(246, 243, 243, 0.986);
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    animation: animationlogin 2s ease;
+}
+
+@keyframes animationlogin{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.login img{
+    width: 100%;
+    height:200px;
+    border-radius: 12px ;
+
+}
+.login form{
+    height:280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login form input[type="email"],
+.login form input[type="password"]{
+    width: 60%;
+    margin: 15px auto;
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: all 1s ease;
+    border: none;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.212);
+    color: white;
+
+
+}
+.login form input[type="email"]:focus,
+.login form input[type="password"]:focus{
+    outline:0px;
+    border: 2px solid rgb(126, 30, 105);
+
+}
+.login p{
+    margin: auto;
+    margin: 10px auto;
+}
+.login button{
+    border: none;
+    width: 60%;
+    padding: 15px 0px;
+    color: white;
+    background: rgb(158, 40, 132);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin: 15px auto;
+}
+.login button:hover{
+    background: rgb(126, 30, 105);
+    transition: all .5s ease;
+}
+
+.error{
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+    background: rgb(165, 32, 32);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: all 1s ease;
+
+}
