@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>eMercado - Todo lo que busques está aquí</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <style>
+
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/dropzone.css" rel="stylesheet">
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="site-header sticky-top py-1 bg-dark">
+        <div class="container d-flex flex-column flex-md-row justify-content-around">
+            <a class="" href="index.html">Inicio</a>
+            <a class="" href="categories.html">Categorías</a>
+            <a class="" href="products.html">Productos</a>
+            <a class="" href="sell.html">Vender</a>
+
+            <div class="d-flex">
+
+                <div class="btn-group">
+                    <button type="button" class="btns ">
+              
+              <div class="userR">
+                <i class="far fa-user-circle"></i>
+              <a class="" id="userName" href=""></a>
+              </div>
+
+            </button>
+                    <button type="button" class="btns btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+              <span class="sr-only"></span>
+            </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="my-profile.html"> <i class="far fa-user-circle"></i>Mi Perfil</a>
+                        <a class="dropdown-item" href="cart.html"><i class="fas fa-shopping-cart"></i><span>Carrito</span></a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="closeSesion" href=""><i class="fas fa-sign-out-alt"></i><span>Cerrar Sesion</span></a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+
+
+    <div class="mydate">
+
+        <div class="portada">
+            <div class="photo">
+
+                <img id="photoperfil" crossorigin="anonymous" src="https://ibb.co/x5RML6Z" alt="">
+            </div>
+        </div>
+        <div class="datos">
+            <h1>DATOS PERSONALES</h1>
+
+
+            <div class="lineas" id="lineas">
+                <div class="row">
+                    <div class="title"><i class="fas fa-signature"></i>Nombre:</div>
+                    <div class="value" id="nameValue">Vacio</div>
+                    <input type="text" class="form-control textinput" name="name" id="name" placeholder="Ingrese Su Nombre">
+                    <div class="edit"><i class="far fa-edit"></i></div>
+                </div>
+                <div class="row">
+                    <div class="title"><i class="fas fa-signature"></i>Apellido:</div>
+                    <div class="value" id="lastnameValue">Vacio</div>
+                    <input type="text" class="form-control textinput" name="lastname" id="lastname" placeholder="Ingrese Su Apellido">
+                    <div class="edit"><i class="far fa-edit"></i></div>
+                </div>
+                <div class="row">
+                    <div class="title"><i class="fas fa-envelope"></i>Email:</div>
+                    <div class="value" id="emailValue">Vacio</div>
+                    <input type="text" class="form-control textinput" name="email" id="email" placeholder="Ingrese Su Email">
+                    <div class="edit"><i class="far fa-edit"></i></div>
+                </div>
+                <div class="row">
+                    <div class="title"><i class="fas fa-phone-alt"></i>Telefono:</div>
+                    <div class="value" id="telefonoValue">Vacio</div>
+                    <input type="text" class="form-control textinput" name="telefono" id="telefono" placeholder="Ingrese Su Telefono">
+                    <div class="edit"><i class="far fa-edit"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="line" style="display: flex;flex-direction: column;width: 50%;justify-content:center; align-items: flex-end; padding: 10px;">
+            <button class="btn" style="margin-right: 0px; margin: 20px 1px;" id="saveChange">Guardar Cambios</button>
+            <div class="error" id="errorlog"> ERROR</div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+    <footer class="text-muted bg-light">
+        <div class="container">
+            <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+            <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+        </div>
+    </footer>
+
+    <div id="spinner-wrapper">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/my-profile.js"></script>
+    <script src="js/redireccion.js"></script>
+
+</body>
+
+</html>

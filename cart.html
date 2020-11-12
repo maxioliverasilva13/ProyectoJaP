@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>eMercado - Todo lo que busques está aquí</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="site-header sticky-top py-1 bg-dark">
+        <div class="container d-flex flex-column flex-md-row justify-content-around">
+            <a class="" href="index.html">Inicio</a>
+            <a class="" href="categories.html">Categorías</a>
+            <a class="" href="products.html">Productos</a>
+            <a class="" href="sell.html">Vender</a>
+
+            <div class="d-flex">
+
+                <div class="btn-group">
+                    <button type="button" class="btns ">
+              
+              <div class="userR">
+                <i class="far fa-user-circle"></i>
+              <a class="" id="userName" href=""></a>
+              </div>
+
+            </button>
+                    <button type="button" class="btns btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+              <span class="sr-only"></span>
+            </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="my-profile.html"> <i class="far fa-user-circle"></i>Mi Perfil</a>
+                        <a class="dropdown-item" href="cart.html"><i class="fas fa-shopping-cart"></i><span>Carrito</span></a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="closeSesion" href=""><i class="fas fa-sign-out-alt"></i><span>Cerrar Sesion</span></a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!-- <div id="success1">
+        <i class="fas fa-times" id="closeAlert"></i>
+
+
+        <div class="alerta alerta1">
+            <h1>Felicitaciones!Acabas de Comprar </h1>
+        </div>
+    </div>
+
+-->
+
+
+
+
+
+
+
+
+
+
+    <div id="success">
+        <i class="fas fa-times" id="closeAlert"></i>
+
+
+        <div class="alerta">
+            <span class="text-grands"><i class="fas fa-shopping-cart"><span >Seleccione Forma De Pago</span></i><span></span></span>
+
+
+            <div class="options" id="options">
+                <div class="text text1">
+                    <div class="line">
+                        <span class="jaja"> <input type="radio" class="ItemPago" value="off"  name="Pago" id="transferencia"><label id="labelRef" for="transferencia">Cuenta Bancaria</label></span>
+                        <div class="icons"><img style="width: 40px;height: 35px;" src="img/transferenciabancaria.png" alt=""></div>
+                    </div>
+                    <div class="form " data-active="off" data-desc="bancaria">
+                        <div class="form-group"><input type="text" class="form-control" id="nroCuenta" placeholder="Nroº Cuenta"></div>
+                        <div class="form-group"><input type="text" class="form-control" id="nombreRem" placeholder="Nombre Remitente"></div>
+                    </div>
+                </div>
+                <div class="text tarjeta">
+                    <div class="line">
+                        <span class="jaja"><input type="radio" value="off" class="ItemPago" name="Pago" id="tarjeta"><label for="tarjeta">Tarjeta Credito</label></span>
+                        <div class="icons"><img src="img/visa.png" alt="VISA"><img src="img/mastercard.png" alt="mastercard"><img src="img/ebrou.png" alt="Brou"></div>
+
+                    </div>
+                    <div class="form" data-active="off" data-desc="tarjeta">
+
+                        <div class="form-group" style="width:100%"><input type="text" class="form-control" id="nroTarjeta" placeholder="Nro Tarjeta"></div>
+                        <div class="form-group" style="width: 100%;"><input type="text" class="form-control" id="nombreRemitenteTarjeta" placeholder="Nombre Remitente"></div>
+
+                        <div class="form-group select data-tarjet" style="width: 60%;">
+                            <label for="ciudad">Fecha Expiracion</label>
+                            <div class="cosos">
+                                <select class="form-control" id="monthExp" style="width: 48%;">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>2</option>
+                                    <option>4</option>
+                                    <option>...</option>
+                                  </select>
+                                <select class="form-control" id="dayExp" style="width: 48%;">
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>...</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="form-group" style="width: 35%;"> <label for="ccv">CCV</label><input type="text" class="form-control" id="ccv" placeholder="CCV"></div>
+
+
+                    </div>
+
+                </div>
+                <div class="text text2">
+                    <div class="line">
+                        <span><input type="radio" class="ItemPago" name="Pago" value="off"  id="efectivo"><label for="efectivo">Efectivo En Abitab</label></span>
+                        <div class="icons"><img src="img/abitab.png" alt="Abitab"></div>
+
+                    </div>
+                    <div class="form" data-active="off" data-desc="abitab">
+
+                        <div class="form-group"><input type="text" class="form-control" id="ciPersona" placeholder="Cedula Identidad(CI)"></div>
+                        <div class="form-group"><input type="text" class="form-control" id="nombreRemitente" placeholder="Nombre Remitente"></div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="error" id="errorLog">
+                <p><i class="fas fa-exclamation-triangle"></i>Error , Complemente Todos Los Campos Correctamente</p>
+            </div>
+            <button class="btn" id="acceptAlert">Aceptar</button>
+        </div>
+    </div>
+
+
+
+    <h1 class=" titulo_cart"><i class="fas fa-shopping-cart"></i>Mi Carrito</h1>
+
+
+    <div class="coso">
+        <section class="items-cart" id="items-cart">
+
+
+
+
+            <h1 class="clearCart" id="clearCart" style="display: flex;flex-direction: column;align-items: center;justify-content: center;"></h1>
+        </section>
+
+        <form action="" class="detallesEnvio">
+
+            <h1 class="text-center">Detalles De Envio</h1>
+
+            <div class="inputs">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="calle" placeholder="Calles">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="numero" placeholder="Numero">
+                </div>
+                <div class="form-group select">
+                    <label for="pais">Pais/Region(*)</label>
+                    <select class="form-control" id="pais">
+                    <option></option>
+                    <option>Uruguay</option>
+                    <option>Argentina</option>
+                    <option>Bolivia</option>
+                    <option>Chile</option>
+                    <option>Mexico</option>
+                  </select>
+                </div>
+                <div class="form-group select">
+                    <label for="ciudad">Ciudad/Localidad(*)</label>
+                    <select class="form-control" id="ciudad">
+                    <option></option>
+                    <option>San Jose</option>
+                    <option>Durazno</option>
+                    <option>Montevideo</option>
+                    <option>Flores</option>
+                    <option>Florida</option>
+                  </select>
+                </div>
+                <div class="form-group select">
+                    <label for="observaciones">Observaciones(*)</label>
+                    <textarea class="form-control" name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+
+
+        </form>
+
+
+        <form class="envio">
+            <h1><i class="fas fa-shipping-fast"></i>Formas Envio</h1>
+
+            <p>
+                <p class="text">
+                    <input type="radio" class="OptionEnvio" name="Envio" id="Alto"> <label for="Alto" class="ass"><i class="fas fa-tachometer-alt"></i>Envio Rapido (2 Dias - <span class="discalto">15</span>% )</label></p>
+                <p class="text">
+                    <input type="radio" class="OptionEnvio" name="Envio" id="Medio"> <label for="Medio" class="ass"><i class="fas fa-weight"></i>Envio Medio (9 Dias - <span></span><span class="discmedio">10</span>% )</label>
+                </p>
+                <p class="text">
+                    <input type="radio" class="OptionEnvio" name="Envio" id="Bajo"> <label for="Bajo" class="ass">  <img src="img/speedometer.png" style="width: 20px ;height:20px;object-fit: cover;" alt=""> Envio Bajo (20 Dias - <span class="discbajo">5</span> %)</label>
+                </p>
+
+
+
+            </p>
+
+
+
+        </form>
+        <div class="total">
+
+            <span>Subtotal: </span> <span id="subtotal"></span>
+            <span>Iva: </span> <span id="iva"></span>
+            <span>Costo Envio: </span> <span id="costoenvio"></span>
+            <span class="grandW">Total: </span> <span id="total"></span>
+            <span style="width: 80%; font-weight: 700;">Tambien podes pagarlo en 12 cuotas de $<span class="cuot" style="color: rgb(68, 38, 124);font-size: 20px;"></span> </span>
+            <span style="width: 100%;"> Por Favor <span class="buttonpayment" id="buttonpayment">Seleccione</span> Forma De Pago</span>
+
+            <button id="buttonComprar">Comprar!</button>
+
+        </div>
+
+
+
+        <div class="error" id="errorComp"><i class="fas fa-exclamation-triangle"></i>Complete todos los datos solicitados e intentelo de nuevo</div>
+    </div>
+
+
+
+    <div id="spinner-wrapper">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <footer class="text-muted" style="background:rgb(228, 227, 227);">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Volver arriba</a>
+            </p>
+            <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+            <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/redireccion.js"></script>
+
+</body>
+
+</html>
